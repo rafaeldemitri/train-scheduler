@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	
+	<meta charset="UTF-8">
+  	<title>Train Schedule</title>
+
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+
+</head>
+
+<body>
+	
+	<div class="container">
+
+		<div class="jumbotron">
+
+			<h1>Train Scheduler</h1>
+
+			<h3>Created By Rafael Ortiz</h3>
+
+		</div>
+
+			<div class="panel panel-primary">
+
+				<div class="panel-heading">
+
+					<h4>Current Train Schedule</h4>
+
+				</div>
+
+					<table class="table table-striped">
+
+						<tr>
+
+							<td>Train Name</td>
+							<td>Destination</td>
+							<td>Frequency (min)</td>
+							<td>Next Arrival</td>
+							<td>Minutes Away</td>
+
+						</tr>
+
+					</table>
+
+				</div>
+
+			<div class="panel panel-primary">
+
+				<div class="panel-heading">
+
+					<h4>Add Train</h4>
+
+				</div>
+
+					<form>
+				  		
+				  		<div class="form-group">
+
+				    		<label for="trainName">Train Name</label>
+
+				    		<input type="text" class="form-control" id="trainName" placeholder="Train Name">
+
+				  		</div>
+
+				  		<div class="form-group">
+
+				    		<label for="destination">Destination</label>
+
+				    		<input type="text" class="form-control" id="destination" placeholder="Destination">
+
+				  		</div>
+
+				  		<div class="form-group">
+
+				  			<label for="startTime">First Train Time (HH:MM)</label>
+
+				    		<input type="text" class="form-control" id="startTime" placeholder="Start Time">
+
+				  		</div>
+
+				  		<div class="form-group">
+
+				  			<label for="frequency">Frequency (min)</label>
+
+				    		<input type="number" class="form-control" id="frequency" placeholder="Frequency">
+
+				  		</div>
+
+				 			 <div  class="btn btn-primary" id="hitMe">Submit</div>
+
+					</form>
+
+		<script type="text/javascript" src="assets/javascript/code.js"></script>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
